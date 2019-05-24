@@ -19,6 +19,6 @@ if __name__ == "__main__":
         mes, clientAdd = serverSocket.recvfrom(BUFFER)
         print("the mesage is : ")
         print(clientAdd)
-        print(mes)
+        print(type(mes))
         #serverSocket.sendall()
-        serverSocket.sendto(mes, clientAdd)
+        serverSocket.sendall(mes)
